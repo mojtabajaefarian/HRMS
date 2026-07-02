@@ -1,0 +1,21 @@
+HRMS v0.5 - Full Build
+
+1) کل پوشه‌ها و فایل‌های این ZIP را داخل مسیر زیر کپی کن:
+   C:\xampp2\htdocs\HRMS
+
+2) در phpMyAdmin این فایل‌ها را به همین ترتیب Import کن:
+   - sql/001_full_build_v0_2.sql
+   - sql/002_upgrade_v0_3.sql
+   - sql/003_upgrade_v0_4.sql
+   - sql/004_upgrade_v0_5.sql
+
+3) آدرس زیر را باز کن:
+   http://localhost/HRMS/public/
+
+4) ورود:
+   username: admin
+   password: 123456
+
+نکات:
+- این نسخه هسته را یکپارچه می‌کند و مسیرهای login / personnel / personnel/{id} را روی یک معماری واحد می‌آورد.
+- اگر قبلاً دیتابیس داری و نمی‌خواهی پاک شود، فایل 001 را اجرا نکن؛ فقط 002 تا 004 را اجرا کن.

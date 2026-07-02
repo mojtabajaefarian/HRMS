@@ -1,0 +1,11 @@
+این هات‌فیکس برای برگرداندن پروژه به وضعیت قابل اجراست.
+
+فایل‌هایی که باید Replace شوند:
+1) public/index.php
+2) routes/web.php
+3) app/Core/Router.php
+
+هدف:
+- حذف وابستگی به app/helpers.php و Autoloader.php که در پروژه وجود ندارند
+- یکپارچه‌سازی معماری Router
+- پشتیبانی از مسیرهای داینامیک مثل /personnel/1

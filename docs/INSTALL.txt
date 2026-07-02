@@ -1,0 +1,4 @@
+1) محتویات ZIP را در C:\xampp2\htdocs\HRMS بریز
+2) فایل sql/001_full_build_v0_2.sql را در phpMyAdmin ایمپورت کن
+3) برو به http://localhost/HRMS/public/
+4) ورود: admin / 123456

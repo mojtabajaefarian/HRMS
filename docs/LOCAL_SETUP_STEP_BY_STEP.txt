@@ -1,0 +1,6 @@
+1. فایل‌های این بسته را داخل پروژه HRMS خودت Paste کن و Replace بزن.
+2. برو به http://localhost/phpmyadmin
+3. اگر دیتابیس samfonir_HRMS وجود ندارد، بساز.
+4. فایل sql/002_hrms_schema.sql را Import کن.
+5. مطمئن شو پروژه داخل C:\xampp\htdocs\HRMS است.
+6. آدرس http://localhost/HRMS/public/ را باز کن.

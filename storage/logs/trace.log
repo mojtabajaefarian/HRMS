@@ -1,0 +1,169 @@
+
+[2026-07-02 17:20:49] bootstrap start
+[2026-07-02 17:20:49] config loaded
+[2026-07-02 17:20:49] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:20:49] router raw uri=/HRMS/public/personnel/create path=/HRMS/public/personnel/create base=/HRMS/public
+[2026-07-02 17:20:49] router normalized path=/personnel/create method=GET
+[2026-07-02 17:20:49] route matched controller=App\Controllers\PersonnelController action=create
+[2026-07-02 17:20:49] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:20:49] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:20:49] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:20:49] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:20:49] autoload try: App\Models\SimpleList => C:\xampp2\htdocs\HRMS/app/Models/SimpleList.php
+[2026-07-02 17:20:49] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:20:49] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:20:49] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:21:18] bootstrap start
+[2026-07-02 17:21:18] config loaded
+[2026-07-02 17:21:18] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:18] router raw uri=/HRMS/public/personnel/store path=/HRMS/public/personnel/store base=/HRMS/public
+[2026-07-02 17:21:18] router normalized path=/personnel/store method=POST
+[2026-07-02 17:21:18] route matched controller=App\Controllers\PersonnelController action=store
+[2026-07-02 17:21:18] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:18] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:18] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:18] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:18] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:21:18] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:18] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:18] bootstrap start
+[2026-07-02 17:21:18] config loaded
+[2026-07-02 17:21:18] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:18] router raw uri=/HRMS/public/personnel path=/HRMS/public/personnel base=/HRMS/public
+[2026-07-02 17:21:18] router normalized path=/personnel method=GET
+[2026-07-02 17:21:18] route matched controller=App\Controllers\PersonnelController action=index
+[2026-07-02 17:21:18] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:18] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:18] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:18] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:18] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:21:18] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:18] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:18] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:21:24] bootstrap start
+[2026-07-02 17:21:24] config loaded
+[2026-07-02 17:21:24] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:24] router raw uri=/HRMS/public/personnel/create path=/HRMS/public/personnel/create base=/HRMS/public
+[2026-07-02 17:21:24] router normalized path=/personnel/create method=GET
+[2026-07-02 17:21:24] route matched controller=App\Controllers\PersonnelController action=create
+[2026-07-02 17:21:24] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:24] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:24] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:24] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:24] autoload try: App\Models\SimpleList => C:\xampp2\htdocs\HRMS/app/Models/SimpleList.php
+[2026-07-02 17:21:24] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:24] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:24] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:21:47] bootstrap start
+[2026-07-02 17:21:47] config loaded
+[2026-07-02 17:21:47] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:47] router raw uri=/HRMS/public/personnel/store path=/HRMS/public/personnel/store base=/HRMS/public
+[2026-07-02 17:21:47] router normalized path=/personnel/store method=POST
+[2026-07-02 17:21:47] route matched controller=App\Controllers\PersonnelController action=store
+[2026-07-02 17:21:47] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:47] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:47] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:47] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:47] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:21:47] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:47] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:47] bootstrap start
+[2026-07-02 17:21:47] config loaded
+[2026-07-02 17:21:47] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:47] router raw uri=/HRMS/public/personnel path=/HRMS/public/personnel base=/HRMS/public
+[2026-07-02 17:21:47] router normalized path=/personnel method=GET
+[2026-07-02 17:21:47] route matched controller=App\Controllers\PersonnelController action=index
+[2026-07-02 17:21:47] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:47] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:47] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:47] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:47] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:21:47] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:47] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:47] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:21:56] bootstrap start
+[2026-07-02 17:21:56] config loaded
+[2026-07-02 17:21:56] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:56] router raw uri=/HRMS/public/personnel path=/HRMS/public/personnel base=/HRMS/public
+[2026-07-02 17:21:56] router normalized path=/personnel method=GET
+[2026-07-02 17:21:56] route matched controller=App\Controllers\PersonnelController action=index
+[2026-07-02 17:21:56] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:56] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:56] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:56] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:56] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:21:56] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:56] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:56] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:21:57] bootstrap start
+[2026-07-02 17:21:57] config loaded
+[2026-07-02 17:21:57] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:57] router raw uri=/HRMS/public/dashboard path=/HRMS/public/dashboard base=/HRMS/public
+[2026-07-02 17:21:57] router normalized path=/dashboard method=GET
+[2026-07-02 17:21:57] route matched controller=App\Controllers\DashboardController action=index
+[2026-07-02 17:21:57] autoload try: App\Controllers\DashboardController => C:\xampp2\htdocs\HRMS/app/Controllers/DashboardController.php
+[2026-07-02 17:21:57] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:57] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:57] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:57] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:57] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:21:59] bootstrap start
+[2026-07-02 17:21:59] config loaded
+[2026-07-02 17:21:59] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:21:59] router raw uri=/HRMS/public/personnel path=/HRMS/public/personnel base=/HRMS/public
+[2026-07-02 17:21:59] router normalized path=/personnel method=GET
+[2026-07-02 17:21:59] route matched controller=App\Controllers\PersonnelController action=index
+[2026-07-02 17:21:59] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:21:59] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:21:59] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:21:59] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:21:59] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:21:59] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:21:59] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:21:59] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:22:30] bootstrap start
+[2026-07-02 17:22:30] config loaded
+[2026-07-02 17:22:30] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:22:30] router raw uri=/HRMS/public/personnel/create path=/HRMS/public/personnel/create base=/HRMS/public
+[2026-07-02 17:22:30] router normalized path=/personnel/create method=GET
+[2026-07-02 17:22:30] route matched controller=App\Controllers\PersonnelController action=create
+[2026-07-02 17:22:30] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:22:30] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:22:30] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:22:30] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:22:30] autoload try: App\Models\SimpleList => C:\xampp2\htdocs\HRMS/app/Models/SimpleList.php
+[2026-07-02 17:22:30] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:22:30] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:22:30] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:22:34] bootstrap start
+[2026-07-02 17:22:34] config loaded
+[2026-07-02 17:22:34] autoload try: App\Core\Router => C:\xampp2\htdocs\HRMS/app/Core/Router.php
+[2026-07-02 17:22:34] router raw uri=/HRMS/public/personnel path=/HRMS/public/personnel base=/HRMS/public
+[2026-07-02 17:22:34] router normalized path=/personnel method=GET
+[2026-07-02 17:22:34] route matched controller=App\Controllers\PersonnelController action=index
+[2026-07-02 17:22:34] autoload try: App\Controllers\PersonnelController => C:\xampp2\htdocs\HRMS/app/Controllers/PersonnelController.php
+[2026-07-02 17:22:34] autoload try: App\Core\Controller => C:\xampp2\htdocs\HRMS/app/Core/Controller.php
+[2026-07-02 17:22:34] autoload try: App\Core\Auth => C:\xampp2\htdocs\HRMS/app/Core/Auth.php
+[2026-07-02 17:22:34] autoload try: App\Core\Session => C:\xampp2\htdocs\HRMS/app/Core/Session.php
+[2026-07-02 17:22:34] autoload try: App\Models\Personnel => C:\xampp2\htdocs\HRMS/app/Models/Personnel.php
+[2026-07-02 17:22:34] autoload try: App\Models\BaseModel => C:\xampp2\htdocs\HRMS/app/Models/BaseModel.php
+[2026-07-02 17:22:34] autoload try: App\Core\Database => C:\xampp2\htdocs\HRMS/app/Core/Database.php
+[2026-07-02 17:22:34] autoload try: App\Core\View => C:\xampp2\htdocs\HRMS/app/Core/View.php
+[2026-07-02 17:51:45] bootstrap start
+[2026-07-02 17:51:45] config loaded
+[2026-07-02 17:51:55] bootstrap start
+[2026-07-02 17:51:55] config loaded
+[2026-07-02 17:53:13] bootstrap start
+[2026-07-02 17:53:13] config loaded
+[2026-07-02 17:53:17] bootstrap start
+[2026-07-02 17:53:17] config loaded
+[2026-07-02 18:00:27] bootstrap start
+[2026-07-02 18:00:27] config loaded
+[2026-07-02 18:00:54] bootstrap start
+[2026-07-02 18:00:54] config loaded
+[2026-07-02 18:01:25] bootstrap start
+[2026-07-02 18:01:25] config loaded
+[2026-07-02 18:31:26] bootstrap start
+[2026-07-02 18:31:26] config loaded
+[2026-07-02 18:31:29] bootstrap start
+[2026-07-02 18:31:29] config loaded

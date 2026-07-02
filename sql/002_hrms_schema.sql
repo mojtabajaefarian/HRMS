@@ -1,0 +1,107 @@
+CREATE DATABASE IF NOT EXISTS `samfonir_HRMS` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `samfonir_HRMS`;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(150) NOT NULL,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  role VARCHAR(50) NOT NULL DEFAULT 'admin',
+  is_active TINYINT(1) NOT NULL DEFAULT 1,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS teams (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL UNIQUE,
+  is_active TINYINT(1) NOT NULL DEFAULT 1,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS categories (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL UNIQUE,
+  is_active TINYINT(1) NOT NULL DEFAULT 1,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS positions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL UNIQUE,
+  is_active TINYINT(1) NOT NULL DEFAULT 1,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS personnel (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  personnel_code VARCHAR(30) NOT NULL UNIQUE,
+  row_no INT UNSIGNED NULL,
+  full_name VARCHAR(200) NOT NULL,
+  category_id INT UNSIGNED NULL,
+  team_id INT UNSIGNED NULL,
+  membership_date DATE NULL,
+  file_created_at DATE NULL,
+  file_status ENUM('تکمیل','ناقص','درحال بررسی','بایگانی') NOT NULL DEFAULT 'ناقص',
+  completion_percent TINYINT UNSIGNED NOT NULL DEFAULT 0,
+  last_updated_at DATETIME NULL,
+  notes TEXT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  CONSTRAINT fk_personnel_category FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL,
+  CONSTRAINT fk_personnel_team FOREIGN KEY (team_id) REFERENCES teams(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS personnel_positions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  personnel_id INT UNSIGNED NOT NULL,
+  position_id INT UNSIGNED NOT NULL,
+  sort_order TINYINT UNSIGNED NOT NULL DEFAULT 1,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_pp_personnel FOREIGN KEY (personnel_id) REFERENCES personnel(id) ON DELETE CASCADE,
+  CONSTRAINT fk_pp_position FOREIGN KEY (position_id) REFERENCES positions(id) ON DELETE CASCADE,
+  UNIQUE KEY uq_personnel_position (personnel_id, position_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS personnel_deficiencies (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  personnel_id INT UNSIGNED NOT NULL,
+  title VARCHAR(200) NOT NULL,
+  description TEXT NULL,
+  status ENUM('باز','رفع شد','لغو شد') NOT NULL DEFAULT 'باز',
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  CONSTRAINT fk_def_personnel FOREIGN KEY (personnel_id) REFERENCES personnel(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS personnel_followups (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  personnel_id INT UNSIGNED NOT NULL,
+  title VARCHAR(200) NOT NULL,
+  description TEXT NULL,
+  followup_at DATETIME NOT NULL,
+  status ENUM('باز','انجام شد','لغو شد') NOT NULL DEFAULT 'باز',
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_follow_personnel FOREIGN KEY (personnel_id) REFERENCES personnel(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS personnel_actions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  personnel_id INT UNSIGNED NOT NULL,
+  title VARCHAR(200) NOT NULL,
+  description TEXT NULL,
+  action_at DATETIME NOT NULL,
+  status ENUM('باز','انجام شد','لغو شد') NOT NULL DEFAULT 'باز',
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_action_personnel FOREIGN KEY (personnel_id) REFERENCES personnel(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO users (full_name, username, password_hash, role)
+VALUES ('Administrator', 'admin', '$2y$10$wH2nJ8Q9x9X1ZVY1o0nR8OxW9x3sLQyQYx0X4Yv0s4n5K7yTQ8s1W', 'admin')
+ON DUPLICATE KEY UPDATE username=username;
+
+INSERT INTO teams (name) VALUES ('فروش'), ('پشتیبانی'), ('اداری')
+ON DUPLICATE KEY UPDATE name=name;
+INSERT INTO categories (name) VALUES ('رسمی'), ('پاره‌وقت'), ('پیمانکار')
+ON DUPLICATE KEY UPDATE name=name;
+INSERT INTO positions (name) VALUES ('مدیر'), ('کارشناس'), ('اپراتور'), ('حسابدار')
+ON DUPLICATE KEY UPDATE name=name;

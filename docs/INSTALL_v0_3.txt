@@ -1,0 +1,4 @@
+1) فایل‌های ZIP را روی پوشه پروژه HRMS کپی و Replace کن.
+2) در phpMyAdmin، دیتابیس samfonir_HRMS را انتخاب کن.
+3) فایل sql/002_upgrade_v0_3.sql را Import کن.
+4) آدرس http://localhost/HRMS/public/personnel و /personnel/create را تست کن.

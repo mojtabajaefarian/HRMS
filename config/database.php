@@ -1,11 +1,10 @@
 <?php
 declare(strict_types=1);
 return [
-    'driver'   => 'mysql',
-    'host'     => '127.0.0.1',
-    'port'     => '3306',
-    'database' => 'hrms',
+    'host' => '127.0.0.1',
+    'port' => '3306',
+    'database' => 'samfonir_HRMS',
     'username' => 'root',
     'password' => '',
-    'charset'  => 'utf8mb4',
+    'charset' => 'utf8mb4',
 ];

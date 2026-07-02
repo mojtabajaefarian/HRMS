@@ -1,0 +1,7 @@
+USE `samfonir_HRMS`;
+
+ALTER TABLE personnel
+  ADD COLUMN IF NOT EXISTS created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  ADD COLUMN IF NOT EXISTS updated_at DATETIME NULL DEFAULT NULL;
+
+UPDATE personnel SET updated_at = COALESCE(last_updated_at, NOW()) WHERE updated_at IS NULL;

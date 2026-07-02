@@ -1,0 +1,8 @@
+PATCH v0.3
+مشکل fatal صفحه Personnel از اینجا بود که مدل Personnel به جدول teams و categories JOIN می‌زد،
+اما در SQL فعلی این جداول در همه محیط‌ها وجود نداشتند.
+
+در این Patch:
+- مدل Personnel فقط از جدول personnel می‌خواند تا MVP بدون خطا بالا بیاید.
+- نیاز به Import دیتابیس جدید ندارد.
+- فقط فایل app/Models/Personnel.php باید جایگزین شود.
